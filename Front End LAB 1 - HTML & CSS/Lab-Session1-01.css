@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+html ,body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    color: black;
+    background-color: tomato;
+    }
+header h1{
+    margin: 0%;
+    padding: 16px;
+    text-align: right;
+    font-weight: 700;
+}
+#navigation {
+    position: sticky;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: grey;
+}
+ .menu li {
+    padding: 10px;
+    display: inline-block;
+ }
+
+ .menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color:black;
+}
+.menu li:nth-child(2):hover #sub-menu-1, .menu li:nth-child(3):hover #sub-menu-2{
+    display: block;
+ }
+
+.sub-menu{
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+ }
+
+.sub-menu li{
+    display: block;
+    background-color: gainsboro;
+ }
+
+ .sub-menu li:hover{
+    background-color: black;
+ }
+
+ #sub-menu-1 a, #sub-menu-2 a{
+    color: steelblue;
+ }

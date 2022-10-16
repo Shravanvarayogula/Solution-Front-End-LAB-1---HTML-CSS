@@ -1,0 +1,83 @@
+.container-graph {
+    position: absolute;
+    background-color: lightgray;
+    top: 290%;
+    left: 45%;
+}   
+
+.container-graph article {
+   display: inline-block;
+}
+
+.graph-bar {
+    display: inline-block;
+    background-color: grey;
+    height: 300px;
+    width:  40px;
+    margin: 20px;
+
+}
+p {
+    padding-left: 20px;
+  }
+  
+h1 {
+      text-align: center;
+    }
+
+#bar-1, #bar-2, #bar-3 {
+    width: 100%;
+    background-color: white;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+#bar-1 {
+    animation-name: autoplot1;
+    height: 70%;
+}
+#bar-2 {
+   
+    animation-name: autoplot2;
+    height: 60%;
+}
+#bar-3 {
+   
+    animation-name: autoplot3;
+    height: 20%;
+}
+
+@keyframes autoplot1{
+    0% { 
+        height: 100%;
+        background-color: white;
+   
+    }
+    100% {
+        height: 70%;
+        background-color: white;
+        }
+
+}
+
+@keyframes autoplot2{
+    0%{
+        background-color: white;
+        height: 100%;
+    }
+    100% {
+        background-color: white;
+        height: 60%;}
+
+}
+
+@keyframes autoplot3{
+    0%{
+        background-color: white;
+        height: 100%;
+    }
+    100% {
+        background-color: white;
+        height: 20%;
+    }
+}
